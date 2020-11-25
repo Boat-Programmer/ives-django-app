@@ -1,1 +1,2 @@
-# ives-django-app
+# inventory-management
+This is a inventory management system
