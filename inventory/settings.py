@@ -82,15 +82,15 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangodb',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'POST': ''
+        'NAME':'djangodb',
+        'USER':'root',
+        'PASSWORD':'',
+        'HOST':'localhost',
+        'POST':''
     }
 }
 
-DATABASES['dafault'] = dj_database_url.config(default='postgres://mutavkxymunkpg:ed608f2e223a5b6e9fb56c4b357de7b054e4ca0dc161f50a522372457e20bd57@ec2-54-172-219-218.compute-1.amazonaws.com:5432/da29vstogmtagi')
+DATABASES['default'] = dj_database_url.config(default='postgres://mutavkxymunkpg:ed608f2e223a5b6e9fb56c4b357de7b054e4ca0dc161f50a522372457e20bd57@ec2-54-172-219-218.compute-1.amazonaws.com:5432/da29vstogmtagi')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
