@@ -21,8 +21,6 @@ from .views import (
 )
 
 urlpatterns = [
-    path('dashboard/', dashboard, name='dashboard'),
-
     path('create-supplier/', create_supplier, name='create-supplier'),
     path('create-buyer/', create_buyer, name='create-buyer'),
     path('create-season/', create_season, name='create-season'),
