@@ -24,4 +24,5 @@ urlpatterns = [
     path('', dashboard, name='dashboard'),
     path('users/', include('users.urls')),
     path('store/', include('store.urls')),
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
