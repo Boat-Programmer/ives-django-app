@@ -51,10 +51,6 @@ class SupplierListView(ListView):
     context_object_name = 'supplier'
 
 
-@login_required(login_url='login')
-def dashboard(request):
-    return render(request, 'store/dashboard.html')
-
 # Buyer views
 @login_required(login_url='login')
 def create_buyer(request):
