@@ -26,7 +26,7 @@ SECRET_KEY = 'k2z9po4i#n+1p(^ny1el2c!om(^-l+_%&ob0azk0-ike*-)81e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','ives-django-app.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','ives-app.herokuapp.com']
 
 
 # Application definition
@@ -90,7 +90,8 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.config(default='postgres://mutavkxymunkpg:ed608f2e223a5b6e9fb56c4b357de7b054e4ca0dc161f50a522372457e20bd57@ec2-54-172-219-218.compute-1.amazonaws.com:5432/da29vstogmtagi')
+DATABASES['default'] = dj_database_url.config(
+    default='postgres://hcutfjoxukhhuy:99c8cd59ae5bf47a670364d311f3a2dad0ebbf070d643c10f187129c50303dc5@ec2-52-2-82-109.compute-1.amazonaws.com:5432/d3nfcvtiro36p1')
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

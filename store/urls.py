@@ -1,6 +1,8 @@
 from django.urls import path
 
 from .views import (
+    dashboard,
+
     create_supplier,
     create_buyer,
     create_season,
@@ -19,6 +21,8 @@ from .views import (
 )
 
 urlpatterns = [
+    path('', dashboard, name='dashboard'),
+
     path('create-supplier/', create_supplier, name='create-supplier'),
     path('create-buyer/', create_buyer, name='create-buyer'),
     path('create-season/', create_season, name='create-season'),
